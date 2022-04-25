@@ -1,0 +1,29 @@
+<div class="welcome">
+    <h1><b>¡Gracias por su compra!</b></h1>
+    <div>
+        <p>Ha comprado {{this.libro?.titulo}} de {{this.libro?.autor}}</p>
+        <mat-progress-bar [value] = this.total_progress class="mat-progress-bar"></mat-progress-bar>
+    </div>
+</div>
+
+<div>
+    <table class="middle">
+        <tr>
+            <td>
+                <img src="/assets/{{this.libro?.ISBN}}.jpg" height = 200 width = 200>
+            </td>
+            <td>
+                <div class="arrow"><span></span><span></span><span></span></div>
+            </td>
+            <td>
+                <app-connect-transfer (connectionProgress)="handleConnectionProgress($event)" (transferProgress)="handleTransferProgress($event)"></app-connect-transfer>
+            </td>
+            
+        </tr>
+    </table>
+
+</div>
+
+
+
+

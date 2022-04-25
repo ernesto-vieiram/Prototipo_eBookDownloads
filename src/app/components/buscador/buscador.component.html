@@ -1,0 +1,7 @@
+<form>
+    <select id="menu-selector" [(ngModel)] = "libro_seleccionado" [ngModelOptions]="{standalone: true}">
+        <option *ngFor = "let libro of this.libros" [ngValue]=libro> {{libro.titulo}} </option>
+    </select>
+</form>
+
+<a [routerLink]="['/comprarLibro']"></a>

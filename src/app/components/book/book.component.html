@@ -1,0 +1,35 @@
+<h1>LIBRO</h1>
+
+<div>
+    <table class="book_info">
+        <tr>
+            <td rowspan="5"><img src="/assets/{{this.libro?.ISBN}}.jpg" width = "200"></td>
+            <td>&nbsp;</td>
+            <td><h2>{{this.libro?.titulo}}</h2></td>
+        </tr>
+        <tr>
+            <td>    </td>
+            <td>{{this.libro?.autor}}</td></tr>
+        <tr>
+            <td>    </td>
+            <td><h1>Precio: {{this.libro?.precio}} €</h1></td>
+        </tr>
+        <tr>
+            <td>    </td>
+            <div class = "purchase_link"> <a routerLink="/purchase_book"> COMPRAR Y DESCARGAR</a></div>
+           
+        </tr>
+        <tr>
+            <td>    </td>
+            <td><h3><u>Nuestros lectores opinan:</u> </h3>
+                <div *ngFor= "let comentario of this.libro?.comentarios"> <p><i>{{comentario}}</i></p> </div></td>
+        </tr>
+    </table>
+</div>
+
+
+<h3 class="sinopsis">{{this.libro?.sinopsis}}</h3>
+
+<div>
+    
+</div>
