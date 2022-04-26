@@ -1,17 +1,35 @@
-<div class="navbar is-dark">
-    <div class="navbar-brand">
-        <a class="navbar-item" routerLink="/"> 
-            <img src="/assets/logo.png" width="auto">
-        </a>
-    </div>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>eRead</title>
+</head>
+<body>
+    <div id="contenido">
+    <router-outlet (activate)="handleRouterActivation($event)"></router-outlet>
 </div>
-
-<router-outlet (activate)="handleRouterActivation($event)"></router-outlet>
-
-<footer class="footer">
-    <div class="container content has-text-centered">
-        <p>
-            Made by grupo 2
-        </p>
+    <footer class="footer">
+        <div class="divfooter">
+            <!--img class="logoend" src="images/pp.png" alt="logo"-->
+            <div id="logo_pp">
+                <img id="logo2" src="/assets/logo.png"> 
+                </div>
+            <div id="firma"><p id="autor">Made by Grupo 2</p></div>         
+            <div id="foodlink">
+                <ul class="ullogo">
+                    <li><a href="#">FAQ</a></li>
+                    <li><img class="logofoot" src="/assets/twitter.png" alt="iconotwitter"></li>
+                    <li><img class="logofoot" src="/assets/insta.png" alt="iconoinstagram"></li>
+                    <li><img class="logofoot" src="/assets/youtube.png" alt="iconoyoutube"></li>
+                </ul>
+            <nav>
+                <ul class="navLinksfoot">
+                    <li><a href="#">Term & conditions</a></li>
+                </ul>
+            </nav>
+            <nav>
+            
+        </nav>
     </div>
-</footer>
+        </div>
+    </footer>
+</body>

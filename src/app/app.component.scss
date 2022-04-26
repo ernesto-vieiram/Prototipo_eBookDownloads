@@ -1,0 +1,98 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+#contenido{
+    min-height: calc(100% - 4rem);
+}
+
+#autor{
+    font-size: 20px;
+    font-family: "Garamond", Times, serif;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.divfooter{
+    display: flex;
+    align-items: center;
+    background-color: rgba(98, 190, 239, 0.518);
+    justify-content: center;
+    border-top: black;
+    
+    
+}
+
+#firma{
+    margin-left: 30%;
+    margin-right:30%;
+}
+
+.footer-articulo{
+    display: flex;
+    align-items: center;
+    background-color: #f35e5ee1;
+}
+
+
+.navLinksfoot{
+    padding-left:10px;
+    align-items: baseline;
+    display: flex;
+}
+
+.navLinksfoot nav{
+	display: flex;
+	
+}
+
+.navLinksfoot  li a:hover{
+    color: #61A0AF;
+    border-bottom: 1px #61A0AF solid;
+}
+
+.ullogo  li a:hover{
+    color: #61A0AF;
+    border-bottom: 1px #61A0AF solid;
+}
+.navLinksfoot li{
+    display: flex;
+	align-items: center;
+}	
+
+.ullogo {
+    display: flex;
+	align-items: center;
+    padding: 0%;
+}	
+.logoend{
+    height: 90px;
+    width: 90px;
+    margin-left: 60px;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer{
+    position: relative;
+    height: 4rem;
+    width: 100%;
+}
+
+.logofoot{
+    height: 20px;
+    width: 20px;
+}
+
+#logo2{
+    
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    
+}
+
+.ullogo li{
+    padding: 0px 10px;
+    display: inline-block;
+}

@@ -1,10 +1,22 @@
-<table class="purchase_resume">
-    <tr>
-        <td><h2>¡Su libro está listo para leer!</h2></td>
-    </tr>
-    <tr>
-        <td>
-            <img src="/assets/{{this.libro?.ISBN}}.jpg" width=200>
-        </td>
-    </tr>
-</table>
+
+<div id="header-home">
+    
+    <img id="logo" src="/assets/logo.png">
+
+   
+    <div id="option">
+        <img class="img-option" src="/assets/perfil.png">
+        <img class="img-option" src="/assets/x.png">
+    </div>
+</div>
+
+<div class="purchase_resume">
+    <h2>¡Su libro está listo para leer!</h2>
+    
+    <img id="libro" src="/assets/{{this.libro?.ISBN}}.jpg" >
+    
+    <button id="btn-atras" routerLink="/">
+        <h1>VOLVER A LA TIENDA</h1>
+    </button>
+</div>
+

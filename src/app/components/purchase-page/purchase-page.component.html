@@ -1,34 +1,47 @@
-<h1>COMPRA Y DESCARGA</h1>
-
-<div>
-    <table class="book_info">
-        <tr>
-            <td rowspan="5"><img src="/assets/{{this.libro?.ISBN}}.jpg" width = "200"></td>
-            <td>&nbsp;</td>
-        </tr>
+<div id="header-home">
     
-        <tr>
-            <td>    </td>
-            <td ><h1>Va a comprar {{this.libro?.titulo}} de {{this.libro?.autor}}</h1>
-                <h1>Su compra será de {{this.libro?.precio}}€</h1>
-                <p>Con la tarjeta: </p>
-                <p><b>**** **** **** 6897</b></p></td>
-        </tr>
+    <img id="logo" src="/assets/logo.png">
 
-        <tr>
-            <td>    </td>
-            <div>
-                <h1>¿Está seguro de que quiere continuar con la compra?</h1>
-                <div class="purchase_link">
-                    <a routerLink="/book_info">CANCELAR</a>
-                    &nbsp;&nbsp;
-                    <a routerLink="/transfer_book">CONFIRMAR</a>
+    <button id="btn-atras" routerLink="/">
+        <img id="flecha" src="/assets/flecha.png">
+        <h1>ATRÁS</h1>
+    </button>
+    <div id="option">
+        <img class="img-option" src="/assets/perfil.png">
+        <img class="img-option" src="/assets/x.png">
+    </div>
+</div>
+
+<div class="compraydescarga">
+    
+    <div class="infolibro">
+        <div id="titautor">
+            <h2>Va a comprar {{this.libro?.titulo}} de {{this.libro?.autor}}</h2>
+            <h3>Su compra será de {{this.libro?.precio}}€</h3>
+        </div>
+    <div class="infocompra">
+        
+        <div id="fotolibro"><img id="libro" src="/assets/{{this.libro?.ISBN}}.jpg"></div>
+        <div id="infocompra2">
+            <div id="tarjeta">
+                <p>Con la tarjeta: </p>
+                <p><b>**** **** **** 6897</b></p>
+            </div>
+            <div id="btncompra">
+                
+                    <a routerLink="/book_info">
+                        <div id="btn-cancelar">CANCELAR</div>
+                    </a>
+                
+                    <a routerLink="/transfer_book"><div id="btn-confirmar">CONFIRMAR</div></a>
                 </div>
             </div>
-           
-        </tr>
-    </table>
-</div>
+        </div>
+    </div>
+    </div>
+
+
+
 
 
 

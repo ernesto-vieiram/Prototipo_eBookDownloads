@@ -1,34 +1,64 @@
-<h1>LIBRO</h1>
 
-<div>
-    <table class="book_info">
-        <tr>
-            <td rowspan="5"><img src="/assets/{{this.libro?.ISBN}}.jpg" width = "200"></td>
-            <td>&nbsp;</td>
-            <td><h2>{{this.libro?.titulo}}</h2></td>
-        </tr>
-        <tr>
-            <td>    </td>
-            <td>{{this.libro?.autor}}</td></tr>
-        <tr>
-            <td>    </td>
-            <td><h1>Precio: {{this.libro?.precio}} €</h1></td>
-        </tr>
-        <tr>
-            <td>    </td>
-            <div class = "purchase_link"> <a routerLink="/purchase_book"> COMPRAR Y DESCARGAR</a></div>
-           
-        </tr>
-        <tr>
-            <td>    </td>
-            <td><h3><u>Nuestros lectores opinan:</u> </h3>
-                <div *ngFor= "let comentario of this.libro?.comentarios"> <p><i>{{comentario}}</i></p> </div></td>
-        </tr>
-    </table>
+
+<div id="header-home">
+    
+        <img id="logo" src="/assets/logo.png">
+    
+        <button id="btn-atras" routerLink="/">
+            <img id="flecha" src="/assets/flecha.png">
+            <h1>ATRÁS</h1>
+        </button>
+        <div id="option">
+            <img class="img-option" src="/assets/perfil.png">
+            <img class="img-option" src="/assets/x.png">
+        </div>
+</div>
+
+<div class="book_info">
+    <div class="column"id="column1">
+        <img id="libro" src="/assets/{{this.libro?.ISBN}}.jpg">
+        <div id="valoracion">
+            <img class="star" src="/assets/star.png">
+            <img class="star" src="/assets/star.png">
+            <img class="star" src="/assets/star.png">
+            <img class="star" src="/assets/star.png">
+            <img class="star" src="/assets/star.png">
+        </div>
+        <h2>Nuestros lectores opinan:</h2>
+        <div *ngFor= "let comentario of this.libro?.comentarios"> <p><i>{{comentario}}</i></p> </div>
+    </div>
+    <div class="column">
+        <div class="separador">
+        <div class="datos">
+            <p>{{this.libro?.titulo}}</p>
+        </div>
+        <div class="datos">
+        <p>{{this.libro?.autor}}</p>
+        </div>
+        </div>
+        <h3 class="sinopsis">{{this.libro?.sinopsis}}</h3>
+        <div class="datos">
+            <p><b>EDICIÓN:</b> {{this.libro?.edicion}}</p>
+            <p><b>FECHA:</b> {{this.libro?.ano}}</p>
+            <p><b>ISBN: </b>{{this.libro?.ISBN}}</p>
+            <p><b>IDIOMA: </b>{{this.libro?.idioma}}</p>
+            <p><b>EDITORIAL:</b> {{this.libro?.editorial}}</p>
+        </div>
+    </div>
+    <div class="column">
+        <h2>PRECIO </h2>
+        <div class="datos">
+            <h4>{{this.libro?.precio}} €</h4>
+        </div>
+        <div id="btn-compra">
+        <div class = "purchase_link"> <a routerLink="/purchase_book">
+            <div class="front">COMPRAR Y DESCARGAR</div>
+        </a></div>
+        </div>
+    </div>
 </div>
 
 
-<h3 class="sinopsis">{{this.libro?.sinopsis}}</h3>
 
 <div>
     
