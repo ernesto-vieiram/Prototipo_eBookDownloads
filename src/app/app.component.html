@@ -5,7 +5,7 @@
 </head>
 <body>
     <div id="contenido">
-    <router-outlet (activate)="handleRouterActivation($event)"></router-outlet>
+    <router-outlet (activate)="handleRouterActivation($event)" (deactivate)="handleRouterDeactivation($event)"></router-outlet>
 </div>
     <footer class="footer">
         <div class="divfooter">

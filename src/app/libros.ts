@@ -40,16 +40,55 @@ export let libros = [
         comentarios: ["Gonzalo Mirillas:\n Muy buen libro", "Juan Pablo García:\n Me ha gustado mucho, lo recomiendo."]
     },
     {
-        id: 2,
-        titulo: "Mi portada de libro",
-        autor: "H. P. Mowli",
-        ISBN: "9788478884955",
+        id: 3,
+        titulo: "Harry Potter y el prisionero de Azkaban",
+        autor: "J. K. Rowling",
+        ISBN: "9788478885190",
         edicion: 10,
-        ano:2022,
+        ano:2000,
+        idioma: "Español",
+        editorial: "salamandra",
+        precio: 17.5,
+        sinopsis: "Cuando el autobús noctámbulo irrumpe en una calle oscura y frena con fuertes chirridos delante de Harry, comienza para él un nuevo curso en Hogwarts, lleno de acontecimientos extraordinarios. Sirius Black, asesino y seguidor de lord Voldemort, se ha fugado, y dicen que va en busca de Harry. En su primera clase de Adivinación, la profesora Trelawney ve un augurio de muerte en las hojas de té de la taza de Harry... Pero quizá lo más aterrador sean los dementores que patrullan por los jardines del colegio, capaces de sorberte el alma con su beso...",
+        comentarios: ["Gonzalo Mirillas:\n Muy buen libro", "Juan Pablo García:\n Me ha gustado mucho, lo recomiendo."]
+    },
+    {
+        id: 4,
+        titulo: "Harry Potter y el Cáliz de Fuego",
+        autor: "J. K. Rowling",
+        ISBN: "9788478886456",
+        edicion: 10,
+        ano:2001,
         idioma: "Español",
         editorial: "salamandra",
         precio: 20.87,
-        sinopsis: "Mi libro Mi libro Mi libro Mi libro Mi libro Mi libro Mi libro Mi libro Mi libro Mi libro Mi libro Mi libro ",
+        sinopsis: "Se va a celebrar en Hogwarts el Torneo de los Tres Magos. Sólo los alumnos mayores de diecisiete años pueden participar en esta competición, pero, aun así, Harry sueña con ganarla. En Halloween, cuando el cáliz de fuego elige a los campeones, Harry se lleva una sorpresa al ver que su nombre es uno de los escogidos por el cáliz mágico. Durante el torneo deberá enfrentarse a desafíos mortales, dragones y magos tenebrosos, pero con la ayuda de Ron y Hermione, sus mejores amigos, ¡quizá logre salir con vida!",
         comentarios: ["Gonzalo Mirillas:\n Muy buen libro", "Juan Pablo García:\n Me ha gustado mucho, lo recomiendo."]
-    }
+    },
+    {
+        id: 5,
+        titulo: "Harry Potter y la Orden del Fénix",
+        autor: "J. K. Rowling",
+        ISBN: "9788478887422",
+        edicion: 10,
+        ano:2004,
+        idioma: "Español",
+        editorial: "salamandra",
+        precio: 20.87,
+        sinopsis: "Son malos tiempos para Hogwarts. Tras el ataque de los dementores a su primo Dudley, Harry Potter comprende que Voldemort no se detendrá ante nada para encontrarlo. Muchos niegan que el Señor Tenebroso haya regresado, pero Harry no está solo: una orden secreta se reúne en Grimmauld Place para luchar contra las fuerzas oscuras. Harry debe permitir que el profesor Snape le enseñe a protegerse de las brutales incursiones de Voldemort en su mente. Pero éstas son cada vez más potentes, y a Harry se le está agotando el tiempo...",
+        comentarios: ["Gonzalo Mirillas:\n Muy buen libro", "Juan Pablo García:\n Me ha gustado mucho, lo recomiendo."]
+    },
+    {
+        id: 6,
+        titulo: "Harry Potter y el Misterio del Príncipe",
+        autor: "J. K. Rowling",
+        ISBN: "9788478889907",
+        edicion: 10,
+        ano:2006,
+        idioma: "Español",
+        editorial: "salamandra",
+        precio: 20.87,
+        sinopsis: "Con dieciseis años cumplidos, Harry inicia el sexto curso en Hogwarts en medio de terribles acontecimientos que asolan Inglaterra. Elegido capitán del equipo de quidditch, los ensayos, los exámenes y las chicas ocupan todo su tiempo, pero la tranquilidad dura poco. A pesar de los ferreos controles de seguridad que protegen la escuela, dos alumnos son brutalmente atacados. Dumbledore sabe que se acerca el momento, anunciado por la Profecía, en que Harry y Voldemort se enfrentarán a muerte: \"El único con poder para vencer al Señor Tenebroso se acerca... Uno de los dos debe morir a manos del otro, pues ninguno de los dos podrá vivir mientras siga el otro con vida.\" El anciano director solicitará la ayuda de Harry y juntos emprenderán peligrosos viajes para intentar debilitar al enemigo, para lo cual el joven mago contará con un viejo libro de pociones perteneciente a un misterioso personaje, alguien que se hace llamar Príncipe Mestizo.",
+        comentarios: ["Gonzalo Mirillas:\n Muy buen libro", "Juan Pablo García:\n Me ha gustado mucho, lo recomiendo."]
+    },
 ]

@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {FormControl} from '@angular/forms';
-import {Observable} from 'rxjs';
-import {map, startWith} from 'rxjs/operators';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
+import {Libro, libros} from '../../libros'
+
 
 
 @Component({
@@ -11,9 +11,18 @@ import {map, startWith} from 'rxjs/operators';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  libros = libros;
+  libro_seleccionado_emit? :Libro;
+
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  onClickImage(value: Libro){
+    this.libro_seleccionado_emit = value
+    this.router.navigate(['/', 'book_info'])
   }
 
 }

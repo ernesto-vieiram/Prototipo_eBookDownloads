@@ -6,9 +6,9 @@
             <a class="navbar-item" id="left-item" routerLink="/"> 
                 <img class="img-menu" src="/assets/mensaje.png">
             </a>
-            <div id="navbar-logo" routerLink="/">
+            <div id="navbar-logo">
                 <div id="navbar-logo2">
-                <img id="logo" src="/assets/logo.png">
+                <img id="logo" src="/assets/logo.png" routerLink="/">
                 </div>
             </div>
             <a class="navbar-item" id="right-item" routerLink="/"> 
@@ -36,14 +36,12 @@
     <div class="catalogo">
         <div class="titulo-cat"><p>NOVEDADES:</p></div>
         <div class="lista-libros">
-            <div>
+            <div class = "Row">
             <img id="flechai" class="img-libro" src="/assets/flechaderecha.png" >
-            <img routerLink="/book_info" class="img-libro" src="/assets/portadalibro.jpg" >
-            <img routerLink="/book_info" class="img-libro" src="/assets/portadalibro2.jpg" >
-            <img routerLink="/book_info" class="img-libro" src="/assets/portadalibro3.jpg" >
-            <img routerLink="/book_info" class="img-libro" src="/assets/8478884459.jpg" >
-            <img routerLink="/book_info" class="img-libro" src="/assets/portadalibro2.jpg" >
-            <img routerLink="/book_info" class="img-libro" src="/assets/9788478884957.jpg" >
+            <div *ngFor = "let libro of libros" class="Column">
+                <img src = "/assets/{{libro.ISBN}}.jpg" class="img-libro" (click)="onClickImage(libro)">
+            </div>
+    
             <img id="flechad" class="img-libro" src="/assets/flechaderecha.png" >
         </div>
         </div>
@@ -52,13 +50,11 @@
         <div class="titulo-cat"><p>SEGUN TUS GUSTOS:</p></div>
         <div class="lista-libros">
             <div>
-            <img id="flechai" class="img-libro" src="/assets/flechaderecha.png" >
-            <img routerLink="/book_info" class="img-libro" src="/assets/8478884459.jpg" >
-            <img routerLink="/book_info" class="img-libro" src="/assets/portadalibro.jpg" >
-            <img routerLink="/book_info" class="img-libro" src="/assets/9788478884957.jpg" >
-            <img routerLink="/book_info" class="img-libro" src="/assets/portadalibro3.jpg" >
-            <img routerLink="/book_info" class="img-libro" src="/assets/portadalibro2.jpg" >
-            <img routerLink="/book_info" class="img-libro" src="/assets/8478884459.jpg" >
+            <div class = "Row">
+                <img id="flechai" class="img-libro" src="/assets/flechaderecha.png" >
+                <div *ngFor = "let libro of libros" class="Column">
+                    <img src = "/assets/{{libro.ISBN}}.jpg" class="img-libro" (click)="onClickImage(libro)">
+                </div>
             <img id="flechad" class="img-libro" src="/assets/flechaderecha.png" >
         </div>
         </div>

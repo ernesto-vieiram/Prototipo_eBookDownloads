@@ -131,3 +131,11 @@ p{
 #flechai{
     transform: rotate(180deg);
 }
+
+.Row {
+    display: table;
+
+}
+.Column {
+    display: table-cell;
+}

@@ -13,17 +13,14 @@ import { Libro, libros } from './libros';
 })
 export class AppComponent {
   title = 'Prototipo';
-  selected_book_ID = 0; //ID of book
   selected_book? : Libro;
 
   handleRouterActivation(component: any){
+    if (component instanceof HomeComponent){
+
+    }
+
     if (component instanceof BookComponent){
-      for (let i = 0; i < libros.length; i++){
-        let libro_i = libros[i];
-        if (libro_i.id == this.selected_book_ID){
-          this.selected_book = libro_i;
-        }
-      }
       component.libro = this.selected_book;
     }
 
@@ -40,6 +37,14 @@ export class AppComponent {
     }
 
   }
+
+  handleRouterDeactivation(component: any){
+    if (component instanceof HomeComponent){
+      this.selected_book = component.libro_seleccionado_emit
+    }
+  }
+
+
 }
 
 
